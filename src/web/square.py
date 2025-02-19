@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from model.square import Square
 import service.square as service
 
-router = APIRouter(prefix="/squares")  # Changed prefix to plural for better convention
+router = APIRouter(prefix="/squares")  
 
 @router.get("/")
 def get_all() -> list[Square]:

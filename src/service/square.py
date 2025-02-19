@@ -47,11 +47,11 @@ def get_area(length: float, width: float) -> float:
     square = get_one(length, width)
     if square:
         return square.area()
-    return 0  # Instead of returning None, return 0 or an error
+    return 0  
 
 def get_circumference(length: float, width: float) -> float:
     """Get the circumference of a square"""
     square = get_one(length, width)
     if square:
         return square.circumference()
-    return 0  # Instead of returning None, return 0 or an error
+    return 0  

@@ -39,7 +39,20 @@ pytest
 ``` bash 
 pytest -v
 ```
-#### This should test adding and getting squares [(8,15), (4.7, 1.1), (3, 1.4)] then testing the area and circumference  
+#### If you want to run only one of the test suites:
+``` bash
+pytest src\test\web
+```
+#### If you want to run an individual test module:
+``` bash
+pytest src\test\web\test_square.py
+```
+#### If you want to run an individual test module:
+``` bash
+pytest src\test\web\test_square.py -k test_case
+```
+#### This should test adding and getting squares [(8,15), (4.7, 1.1), (3, 1.4)] then testing the area and circumference
+### NOTE: doing individual test cases may yeild poor results.    
 
 ## 📜 License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
